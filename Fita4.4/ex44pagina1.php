@@ -13,9 +13,9 @@
 session_start();
 
 
-if (isset($_GET["letter"])){
-    $_SESSION["letter"] .= $_GET["letter"];
-    echo $_SESSION["letter"];
+if (isset($_GET["textarea"])){
+    $_SESSION["textarea"] .= $_GET["textarea"];
+    echo $_SESSION["textarea"]."<br>";
 
 }
 
@@ -26,7 +26,7 @@ if (isset($_GET["letter"])){
 
 
 
-<form action="ex43pagina1.php" method="GET">
+<form action="ex44pagina1.php" method="POST">
 
     <input type="textarea" name="textarea" id="textarea" >
     <input type="submit" name="" id="">
